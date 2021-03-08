@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 27px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 27px;
+  }
+}
+
+/* Style the header */
+.header {
+  padding: 100px;
+  padding-bottom: 250px;
+  background-image: url(headerr.jpg);
+  text-align: center;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    background-image: url("headerr.jpg");
+    background-size: cover;
+    padding-bottom: 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width:601px) {
+  .header {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width:1020px) {
+  .header {
+    background-image: url("headerr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-size: cover;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  li a {
+    padding: 10px 7px;
+    font-size: 12px;
+  }
+}
+
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ff765bc5;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#greeting {
+  margin-left: 23px;
+}
+
+.container-fluid {
+  margin: 30px;
+  max-width: 1300px;
+}
+
+@media screen and (max-width: 992px) {
+  .container-fluid {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-fluid {
+    margin: 0px;
+  }
+}
+
+/* за да застават една до друга */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+/* 6 колони една до друга */
+.column {
+  flex: 16.6%;
+  max-width: 16.6%;
+  padding: 0 4px;
+}
+
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+button {
+  background-color: #ff765bc5;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  padding-top: 20px;
+  background-color: #ff765bc5;
+  color: white;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+a {
+  color: #333;
+}

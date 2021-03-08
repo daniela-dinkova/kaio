@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Kai-American Akita</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+  <div class="header">
+  </div>
+
+
+  <ul class="sticky">
+    <li><a class="active" href="#home">Начало</a></li>
+    <li><a href="za kai.html">За Кай</a></li>
+    <li><a href="za porodata.html">За породата</a></li>
+    <li><a href="blog.html">Блог</a></li>
+    <li><a href="index.php">Контакти</a></li>
+  </ul>
+
+
+  <div class="container-fluid">
+    <br>
+    <h2><b> <i class="fas fa-paw"></i>&nbsp Блогът на Кай &nbsp<i class="fas fa-paw"></i></b></h2><br>
+    <!-- Лапичките -->
+    <label id="greeting"></label>
+    <p>&nbsp &nbsp Добре дошли в нашия блог! Това е Кай. Той е на път да отпразнува шестия си рожден ден.
+      Кай е роден във Велико Търново. Често го наричат "Мечо" ... можете ли да си представите защо?
+      Той е Американска Акита, все още непозната порода. Идеята на блога е да говорим за Американската Акита без
+      ограничения
+      и да предоставим повече информация на бъдещите и настоящите собственици на Акита.
+    </p><br>
+    <div class="row">
+      <!-- 6 колони за респонсив галерията -->
+      <div class="column">
+        <img src="Responsive img/1.jpg">
+        <img src="Responsive img/2.jpg">
+      </div>
+      <div class="column">
+        <img src="Responsive img/3.jpg">
+        <img src="Responsive img/4.jpg">
+      </div>
+      <div class="column">
+        <img src="Responsive img/5.jpg">
+        <img src="Responsive img/6.jpg">
+      </div>
+      <div class="column">
+        <img src="Responsive img/7.jpg">
+        <img src="Responsive img/8.jpg">
+      </div>
+      <div class="column">
+        <img src="Responsive img/9.jpg">
+        <img src="Responsive img/10.jpg">
+      </div>
+      <div class="column">
+        <img src="Responsive img/11.jpg">
+        <img src="Responsive img/12.jpg"><br><br><br><br><br>
+      </div>
+      <div class="row">
+        <!-- Трите колони -->
+        <div class="col-sm-4" style="border-right: 2px solid  #ff765bc5;">
+          <h4><b>За американската акита</b></h4><br>
+          <p>&nbsp Дружелюбни, бдителни, отзивчиви, достолепни, послушни и смели: това са епитетите,
+            които най-добре описват американските акити. Този силен спътник е прославен с
+            вродените си инстинкти на пазач, за това е силно препоръчително да бъде социализиран
+            още от много ранна възраст. Тези кучета са относително недоверчиви към хората,
+            които не познават и леко доминират в отношенията си с други кучета.</p>
+        </div>
+        <div class="col-sm-4" style="border-right: 2px solid  #ff765bc5;">
+          <h4><b>Породни характеристики</b></h4><br>
+          <p>Държава: Съединени щати <br>
+            Категория на размер: Голямо <br>
+            Височина: 79-93 см <br>
+            Дължина: 93-110 см <br>
+            Тегло: 31,8-59 кг <br><br><br>
+            Чудесно куче пазач <br>
+            Изискват пространство навън <br>
+            Изисква умерено поддържане на козината<br>
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h4><b>Калкулатор за кучешките години</b></h4><br>
+          <p>Въведете човешките години на вашето куче, за да видите на колко кучешки години е: </p>
+          <input type="text" id="input"></input>
+          <button type="button" id="button1" onClick="javascript:multiple()">резултат</button>
+          <br>
+          <p id="demo"></p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <p>Автор: Даниела Динкова<br>
+      <a href="mailto:daniela_dinkova@abv.bg">daniela_dinkova@abv.bg</a></p>
+  </footer>
+
+  <script>
+    var myDate = new Date();
+    var currentHour = myDate.getHours();
+    var msg;
+
+    if (currentHour < 12)
+      msg = 'Добро утро,';
+    else if (currentHour >= 12 && currentHour <= 17)
+      msg = 'Добър ден,';
+    else if (currentHour >= 17 && currentHour <= 24)
+      msg = 'Добър вечер,';
+
+    document.getElementById('greeting').innerHTML =
+      '<b>' + msg + '</b> драги читатели!';
+  </script>
+
+  <script>
+    function multiple() {
+      let a = document.getElementById("input").value;
+      let c = Number(a) * Number(7);
+      document.getElementById("demo").innerHTML = "Вашето куче е на " + c + "години";
+      if (a < 1) { //Ако въведената стойност е по-малка от 1 
+        document.getElementById("demo").innerHTML = ("Въведете стойност над 1");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

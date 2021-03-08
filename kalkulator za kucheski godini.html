@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Test page</title>
+</head>
+<body>
+    <h4>Калкулатор за кучешки години</h4>
+    <p>Въведете човешките години на вашето куче, за да видите на колко кучешки години е: </p>
+<input type="text" id="input"></input>
+<button type="button" id="button1" onClick="javascript:multiple()">резултат</button>
+<p id="demo"></p>
+
+<script>
+function multiple(){
+    let a = document.getElementById("input").value; 
+    let c = Number(a) * Number(7);
+    document.getElementById("demo").innerHTML = "Вашето куче е на " + c + "години";
+    if
+      (a<1){
+    document.getElementById("demo").innerHTML = ("Въведете стойност над 1");
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+body {
+    
+
+  margin: 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  li a {
+padding: 10px 7px;
+font-size: 12px;
+  }
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ff765bc5;
+}
+
+/*for sticky navbar*/
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.content {
+  padding: 10px;
+  }
+
+/*fot all text*/
+.container-fluid{
+  padding: 90px;
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+@media screen and (max-width: 960px) {
+.container-fluid {
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+}
+
+/*for image in right*/
+.float-right {
+  float: right;
+}
+
+/*for image in left*/
+.float-left {
+  float: left;
+}
+  
+h3 {
+  text-indent:1%;
+}
+
+div p {
+  text-indent:2%;
+}
+
+/* 4 columns */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+margin-right: 0px;
+margin-left: 0px;
+width: 50%;
+    }
+  }
+
+  #hachi{
+    margin-left:10px;
+  }
+
+  @media screen and (max-width: 428px) {
+    #hachi {
+      margin-left:10px;
+      }
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 600px)  {
+      #hachi {
+        margin-left:50px;
+        }
+      }
+
+      @media screen and (min-width: 600px) and (max-width: 800px)  {
+        #hachi {
+          margin-left:100px;
+          }
+        }
+
+    @media screen and (max-width: 428px) {
+      #film {
+        margin-left:10px;
+        }
+      }
+
+      @media screen and (min-width: 500px) and (max-width: 600px)  {
+        #film {
+          margin-left:50px;
+          }
+        }
+  
+        @media screen and (min-width: 600px) and (max-width: 800px)  {
+          #film {
+            margin-left:100px;
+            }
+          }
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  padding-top: 20px;
+  background-color: #ff765bc5;
+  color: white;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+a {
+  color: #333;
+}
+

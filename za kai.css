@@ -1,0 +1,111 @@
+body {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 2500px;
+}
+
+/*style navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/*start from left*/
+li {
+  float: left;
+}
+
+/*to be horizontal*/
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  li a {
+    padding: 10px 7px;
+    font-size: 12px;
+  }
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ff765bc5;
+}
+
+/*sticky navbar*/
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.content {
+  padding: 10px;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 1220px) {
+  .carousel-inner img {
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* background color carousel*/
+.carousel-item {
+  background-color: white;
+}
+
+/*carousel don't hide navbar*/
+#carousel {
+  z-index: -1;
+}
+
+.row {
+  margin-left: 50px;
+  max-width: 1200px;
+}
+
+.circle {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #ff765bc5;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  padding-top: 20px;
+  background-color: #ff765bc5;
+  color: white;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+a {
+  color: #333;
+}
